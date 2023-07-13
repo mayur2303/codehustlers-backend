@@ -22,7 +22,7 @@ public class CustomerController {
     }
 
     @GetMapping("/customers/{id}")
-    public ResponseEntity<Customer> getProductById(@PathVariable long id) {
+    public ResponseEntity<Customer> getProductById(@PathVariable String id) {
         return ResponseEntity.ok().body(customerRepository.getReferenceById(id));
     }
 }

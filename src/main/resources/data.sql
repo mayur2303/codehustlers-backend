@@ -23,3 +23,34 @@ insert into product values (22, 'Payroll');
 insert into product values (23, 'Pension2');
 insert into product values (24, 'Direct_Debit');
 
+drop table customer;
+CREATE TABLE customer
+(
+  Cust_ID VARCHAR(100),
+  Status_Dt VARCHAR(100),
+  Emp_Status VARCHAR(100),
+  Cust_Ctry VARCHAR(100),
+  Cust_Sex VARCHAR(100),
+  Age VARCHAR(100),
+  Join_Dt VARCHAR(100),
+  Is_New_Cust VARCHAR(100),
+  Cust_Since VARCHAR(100),
+  Relship_Status VARCHAR(100),
+  Lst_Dt_Primary_Cust VARCHAR(100),
+  Cust_Type_Mth_Beg VARCHAR(100),
+  Cust_Relship_Type_Mth_Beg VARCHAR(100),
+  Residence_Ctry VARCHAR(100),
+  Is_Foreigner VARCHAR(100),
+  Is_Spouse_Emp VARCHAR(100),
+  Join_Channel VARCHAR(100),
+  Deceased_Flg VARCHAR(100),
+  Address_Type VARCHAR(100),
+  Cust_Province_Cd VARCHAR(100),
+  Cust_Province_Name VARCHAR(100),
+  Cust_Active_Status VARCHAR(100),
+  Gross_HHLD_Income VARCHAR(100),
+  Cust_Segment VARCHAR(100)
+)
+AS
+SELECT *
+FROM CSVREAD('src/main/resources/insert_customer.csv');
