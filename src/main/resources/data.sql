@@ -1,0 +1,25 @@
+insert into product values (1, 'Savings_Acct');
+insert into product values (2, 'Guarantees');
+insert into product values (3, 'Cur_Acct');
+insert into product values (4, 'Derivative_Acct');
+insert into product values (5, 'Payroll_Acct');
+insert into product values (6, 'Junior_Acct');
+insert into product values (7, 'Mas_Particular_Acct');
+insert into product values (8, 'Particular_Acct');
+insert into product values (9, 'Particular_Plus_Acct');
+insert into product values (10, 'Short_Term_Deposits');
+insert into product values (11, 'Med_Term_Deposits');
+insert into product values (12, 'Long_Term_Deposits');
+insert into product values (13, 'e-Acct');
+insert into product values (14, 'Funds');
+insert into product values (15, 'Mortgage');
+insert into product values (16, 'Pension1');
+insert into product values (17, 'Loans');
+insert into product values (18, 'Taxes');
+insert into product values (19, 'Credit_Card');
+insert into product values (20, 'Securities');
+insert into product values (21, 'Home_Acct');
+insert into product values (22, 'Payroll');
+insert into product values (23, 'Pension2');
+insert into product values (24, 'Direct_Debit');
+
