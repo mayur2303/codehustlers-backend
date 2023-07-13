@@ -53,4 +53,4 @@ CREATE TABLE customer
 )
 AS
 SELECT *
-FROM CSVREAD('src/main/resources/insert_customer.csv');
+FROM CSVREAD('insert_customer.csv');
