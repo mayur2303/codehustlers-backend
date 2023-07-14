@@ -1,10 +1,10 @@
 package com.codehustler.backendserver.repository;
 
-import org.springframework.stereotype.Repository;
 import com.codehustler.backendserver.entity.Customer;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CustomerRepository extends JpaRepository<Customer, String> {
-
+public interface CustomerRepository extends PagingAndSortingRepository<Customer, String> {
+    Customer findById(String id);
 }
