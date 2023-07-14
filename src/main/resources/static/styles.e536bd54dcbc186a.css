@@ -4,7 +4,7 @@
 }
 /* Set a fixed scrollable wrapper */
 .tableWrap {
-  height: 400px;
+  height: 250px;
   overflow: auto;
 }
 /* Set header to stick to the top of the container. */
