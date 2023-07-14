@@ -46,6 +46,57 @@ thead {
 body.white-content th {
   background-color: #fff !important;
 }
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.navbar.navbar-transparent {
+  position: fixed !important;
+  background: none !important;
+}
+.list-group-item {
+  background-color: inherit !important;
+  border: none !important;
+}
 /* based on angular-toastr css https://github.com/Foxandxss/angular-toastr/blob/cb508fe6801d6b288d3afc525bb40fee1b101650/dist/angular-toastr.css */
 
 /* position */
@@ -12710,7 +12761,8 @@ table.tablesorter thead tr .header {
   z-index: 1031;
   border-radius: 8px 0 0 8px;
   text-align: center;
-  top: 130px;
+  cursor: pointer;
+  top: 85px;
 }
 .fixed-plugin li > a,
 .fixed-plugin .badge {
